@@ -308,7 +308,7 @@ sub RunXMRStak{
     my $configfile= shift;
     
     #run xmrig in parallel
-    system("sudo nice -n -20 sudo ./xmrig --config=$configfile &");
+    system("sudo nice -n -20 sudo ./../xmrig/build/xmrig --config=$configfile &");
 
     #wait for some time
     sleep ($runtime);
